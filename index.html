@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR. RIYAJUDDIN MONDAL</title>
+    
+    <link rel="icon" type="image/x-icon" href="https://drriyaj.uddinmondal.in/favicon.ico">
+
+    <style>
+        /* Define custom font from your absolute URL */
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('https://drriyaj.uddinmondal.in/font.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'MyCustomFont', sans-serif;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            /* Remote Background Image */
+            background-image: url('https://drriyaj.uddinmondal.in/background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .glass-card {
+            background: rgba(0, 0, 0, 0.45); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 40px;
+            border-radius: 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            width: 90%;
+            max-width: 450px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 1.2s ease-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items within the card */
+        }
+
+        /* Image Styling - Removed border and background box */
+        .profile-image {
+            width: 180px; /* Scaled for web balance while maintaining 1:1 ratio */
+            height: 180px;
+            margin-bottom: 25px;
+            display: block;
+            border-radius: 15px; /* Optional slight roundness on the corners */
+            object-fit: contain; /* Ensures the whole 699x699 image is visible and unobstructed */
+            border: none; /* No border box */
+            background: transparent; /* No background box */
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 5px;
+            font-size: 26px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%; /* Ensure container takes full card width for links */
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 17px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-family: 'MyCustomFont', sans-serif;
+            width: 100%; /* Full width within container */
+        }
+
+        .btn:hover {
+            background: #ffffff;
+            color: #000000;
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <img src="doctor_image.png" alt="DR. RIYAJUDDIN MONDAL" class="profile-image">
+        
+        <h1>DR. RIYAJUDDIN MONDAL</h1>
+        <h2>MBBS (Honors.) (WBUHS)</h2>
+        
+        <div class="link-container">
+            <a href="https://drriyaj.uddinmondal.in/clinics" class="btn">Clinics</a>
+            <a href="https://riyaj.uddinmondal.in" class="btn">Personal Website</a>
+        </div>
+    </div>
+
+</body>
+</html>
